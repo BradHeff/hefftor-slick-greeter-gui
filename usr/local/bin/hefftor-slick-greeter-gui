@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python3 /usr/lib/hefftor-slick-greeter-gui/hefftor-slick-greeter-gui.py
