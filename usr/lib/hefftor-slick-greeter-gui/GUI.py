@@ -5,12 +5,13 @@
 
 def GUI(self, Gtk, fn):
     vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
-    vbox1 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
+    # vbox1 = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
     hbox1 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
     hbox2 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
     hbox3 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
 
     self.add(vbox)
+    self.set_name("window")
 
     lbl1 = Gtk.Label(label="Theme Name")
     self.theme_combo = Gtk.ComboBoxText()
@@ -29,7 +30,7 @@ def GUI(self, Gtk, fn):
 
     hbox3.pack_start(lbl3, False, False, 0)
     hbox3.pack_start(self.font, False, False, 0)
-    
+
     vbox.pack_start(hbox1, False, False, 0)
     vbox.pack_start(hbox2, False, False, 0)
     vbox.pack_start(hbox3, False, False, 0)
