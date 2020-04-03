@@ -13,6 +13,8 @@ class SlickGreeterGUI(Gtk.Window):
     def __init__(self):
         super(SlickGreeterGUI, self).__init__(title="Slick Greeter GUI")
         self.connect("delete-event", Gtk.main_quit)
+        self.set_size_request(800, 600)
+        self.set_position(Gtk.WindowPosition.CENTER)
         GUI.GUI(self, Gtk, fn)
 
 
