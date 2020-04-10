@@ -34,5 +34,3 @@ def GUI(self, Gtk, fn):
     vbox.pack_start(hbox1, False, False, 0)
     vbox.pack_start(hbox2, False, False, 0)
     vbox.pack_start(hbox3, False, False, 0)
-
-    fn.pop_themes(self)
