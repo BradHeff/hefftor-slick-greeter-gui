@@ -17,6 +17,9 @@ class SlickGreeterGUI(Gtk.Window):
         # self.set_size_request(800, 600)
         self.set_position(Gtk.WindowPosition.CENTER)
         self.timeout_id = None
+        if not fn.os.path.isdir(fn.conf):
+            fn.os.mkdir(fn.conf)
+
         fn.copy(fn.root_config, fn.config)
 
         GUI.GUI(self, Gtk, fn, GdkPixbuf)

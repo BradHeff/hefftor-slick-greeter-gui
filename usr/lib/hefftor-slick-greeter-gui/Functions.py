@@ -11,11 +11,11 @@ from gi.repository import GLib
 home = os.path.expanduser("~")
 base_dir = os.path.dirname(os.path.realpath(__file__))
 root_config = "/etc/lightdm/slick-greeter.conf"
-
+conf = home + "/.config/hefftor-slick-greeter-gui"
 # here = Path(__file__).resolve()
 working_dir = ''.join([str(Path(__file__).parents[2]),
                        "/share/hefftor-slick-greeter-gui/"])
-config = working_dir + "slick-greeter.conf"
+config = conf + "/slick-greeter.conf"
 
 
 def show_in_app_notification(self, message):
