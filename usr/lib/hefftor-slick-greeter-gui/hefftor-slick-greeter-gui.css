@@ -1,3 +1,7 @@
 window > box {
     padding: 20px;
 }
+
+button#apply {
+    border-radius: 20px;
+}

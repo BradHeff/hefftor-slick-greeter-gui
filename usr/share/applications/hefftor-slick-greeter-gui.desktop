@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Hefftor Slick Greeter GUI
+GenericName=Hefftor Slick Greeter GUI
+X-GNOME-FullName=Hefftor Slick Greeter GUI
+Comment=Application for Changing slick greeter
+Exec=/usr/local/bin/hefftor-slick-greeter-gui
+Icon=hefftorlinux
+Terminal=false
+Type=Application
+Categories=GTK;Settings;Security;X-GNOME-Settings-Panel;X-GNOME-SystemSettings;X-Unity-Settings-Panel;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
+Keywords=hefftor;tool;twm;color;
+StartupNotify=true
